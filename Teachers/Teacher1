@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Kiwanuka Nicholas - Teacher Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label, input {
+            display: block;
+            margin: 10px auto;
+            font-size: 18px;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #dashboard {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dr. Kiwanuka Nicholas - Teacher Dashboard</h1>
+
+    <p>Subject: Science</p>
+    <p>Balance: 0 UGX</p>
+
+    <!-- Withdraw Request Form (Formspree) -->
+    <form
+      id="withdraw-form"
+      action="https://formspree.io/f/xrbggjrn" 
+      method="POST"
+    >
+        <label>
+            Phone Number:
+            <input type="tel" name="phone" required>
+        </label>
+        <label>
+            Withdrawal Amount (UGX):
+            <input type="number" name="withdraw_amount" required min="1">
+        </label>
+        <button type="submit">Request Withdrawal</button>
+    </form>
+
+</body>
+</html>
